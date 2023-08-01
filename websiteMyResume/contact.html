@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        div{
+            width: 70%;
+            border: 1px solid  rgb(190, 190, 190);
+            border-radius: 10px;
+            padding: 20px 40px;
+        }
+        p,label,input,select{
+            font-size: 18px;
+        }
+        label{
+            margin-bottom: 4px;
+            margin-top: 10px;
+            display: block;
+        }
+        select{
+            width: 50%;
+        }
+        input{
+            width: 60%;
+
+        }
+        .sub{
+            width: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./Home.html">Home</a> |
+        <a href="./Education.html">Education</a> |
+        <a href="./Experience.html">Work Experience</a> |
+        <a href="./contact.html">Contact Me</a> |
+    </nav>
+    <hr>
+    <h1>Contact Me</h1>
+    <div>
+        <p>Enter your info...</p>
+        <form action="#">
+            <label for="fname">Your Name</label>
+            <input type="text" name="fname">
+            <label for="email">Your E-mail</label>
+            <input type="text" name="email">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" >
+                <option value="none"  hidden >Select...</option>
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
+            </select>
+
+            <label for="fname">Massage</label>
+            <textarea name="massage" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input class="sub" type="submit" value="Send">
+            <input class="sub" type="reset" value="Clear">
+        </form>
+    </div>
+</body>
+</html>
